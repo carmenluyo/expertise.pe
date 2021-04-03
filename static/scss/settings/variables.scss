@@ -1,0 +1,34 @@
+:root {
+  --color-primary: #7356fc;
+  --color-primary-hover: #624bcf;
+  --color-primary-placeholder: #ab9afd;
+  --color-secondary: #6ac0d1;
+  --color-secondary-hover: #5797a4;
+  --color-disabled: #ccc;
+  --color-gray: #e0e0e0;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-font: #666;
+  --color-cyan: #7de9ff;
+  --font-family: "Lato", sans-serif;
+}
+
+$color-primary: var(--color-primary);
+$color-primary-hover: var(--color-primary-hover);
+$color-primary-placeholder: var(--color-primary-placeholder);
+$color-secondary: var(--color-secondary);
+$color-secondary-hover: var(--color-secondary-hover);
+$color-disabled: var(--color-disabled);
+$color-font: var(--color-font);
+$color-gray: var(--color-gray);
+$color-cyan: var(--color-cyan);
+$color-black: var(--color-black);
+$color-white: var(--color-white);
+$font-family: var(--font-family);
+$border-radius: 10rem;
+$shadow: 0 4px 10px rgba(132, 132, 132, 0.15);
+$breakpoints: (
+  "small": 768px,
+  "medium": 1024px,
+  "large": 1200px,
+) !default;

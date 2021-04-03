@@ -1,0 +1,11 @@
+.main {
+  @include breakpoint(medium) {
+    max-width: 1200px;
+    width: 88%;
+    margin: 0 auto;
+
+    .container {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.section {
+  margin-bottom: 3rem;
+
+  &__head {
+    margin-bottom: 2rem;
+  }
+
+  @include breakpoint(medium) {
+    &__head {
+      margin-bottom: 3.5rem;
+    }
+  }
+}

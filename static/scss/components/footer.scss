@@ -1,0 +1,57 @@
+.footer {
+  color: $color-white;
+
+  &__bottom {
+    text-align: center;
+    color: $color-font;
+    font-size: 0.82rem;
+    margin-bottom: 3rem;
+  }
+
+  &__container {
+    background-color: $color-primary;
+    border-radius: $border-radius / 4;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    color: $color-white;
+  }
+
+  .form {
+    &__container {
+      margin: 0 0 2rem;
+      // if there is a map, remove this line
+      > img {
+        width: 100%;
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    &__container {
+      padding: 4rem;
+    }
+
+    .form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5rem;
+
+      &__container {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include breakpoint(large) {
+    &__container {
+      .form {
+        textarea {
+          height: 20rem;
+        }
+      }
+    }
+  }
+}

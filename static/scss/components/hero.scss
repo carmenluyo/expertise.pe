@@ -1,0 +1,35 @@
+.hero {
+  width: 88%;
+  margin: 3rem auto;
+
+  &__image {
+    max-width: 88%;
+    margin: 3rem auto;
+  }
+
+  @include breakpoint(medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+    width: 100%;
+    min-height: 530px;
+
+    &__content {
+      max-width: 573px;
+    }
+
+    &__image {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    .title {
+      font-size: 3rem;
+    }
+
+    .paragraph {
+      font-size: 1.2rem;
+    }
+  }
+}
